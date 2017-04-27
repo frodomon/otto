@@ -3,6 +3,9 @@
 			</div>
 			<div class="footer-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<div class="footer-top-left col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+					
+				</div>
+				<div class="footer-top-left-center col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<?php 
 						$address_line_1 = get_option('dohko_address_line_1');
 						$address_line_2 = get_option('dohko_address_line_2');
@@ -10,18 +13,13 @@
 				
 					if($address_line_1): ?> 
 						<div class='footer-address group'>
-							<div class='footer-icon'>
-								<i class="fa fa-map-marker" aria-hidden="true"></i>
-							</div>
 							<div class='footer-content'>
-								<?php if($address_line_1): ?><p><?php print $address_line_1; ?></p><?php endif; ?>
+								<?php if($address_line_1): ?><p><i class="fa fa-map-marker" aria-hidden="true"></i>  <?php print $address_line_1; ?></p><?php endif; ?>
 								<?php if($address_line_2): ?><p><?php print $address_line_2; ?></p><?php endif; ?>
 								<?php if($address_line_3): ?><p><?php print $address_line_3; ?></p><?php endif; ?>
 							</div>
 						</div>
 					<?php endif; ?>
-				</div>
-				<div class="footer-top-left-center col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<?php 
 						$working_days_1 = get_option('dohko_working_days_1');
 						$working_days_2 = get_option('dohko_working_days_2');
@@ -32,11 +30,8 @@
 
 						if($working_days_1): ?> 
 							<div class='footer-working_days group'>
-								<div class='footer-icon'>
-									<i class="fa fa-clock-o" aria-hidden="true"></i>
-								</div>
 								<div class='footer-content'>
-									<p class="padding-abajo">Horario de Atención</p>
+									<p class="padding-abajo"><i class="fa fa-clock-o" aria-hidden="true"></i> Horario de Atención</p>
 									<?php if($working_days_1): ?><p><?php print $working_days_1; ?></p><?php endif; ?>
 									<?php if($working_hours_1): ?><p class="padding-abajo"><?php print $working_hours_1; ?></p><?php endif; ?>
 									<?php if($working_days_2): ?><p><?php print $working_days_2; ?></p><?php endif; ?>
@@ -56,46 +51,28 @@
 					
 						if($telephone ): ?> 
 							<div class="footer-phone group">
-								<div class='footer-icon'>
-									<i class="fa fa-phone" aria-hidden="true"></i>
-								</div>
 								<div class='footer-content'>
-									<p><a href="tel:<?php print $telephone; ?>"><?php print $telephone; ?></a></p>
+									<p><a href="tel:<?php print $telephone; ?>"><i class="fa fa-phone" aria-hidden="true"></i> <?php print $telephone; ?></a></p>
 								</div>
 							</div>
 						<?php
 						endif;
 						if($mobile): ?> 
 							<div class="footer-mobile group">
-								<div class='footer-icon'>
-									<i class="fa fa-mobile" aria-hidden="true"></i>
-								</div>
 								<div class='footer-content'>
-									<p><a href="tel:<?php print $mobile; ?>"><?php print $mobile; ?></a></p>
+									<p><a href="tel:<?php print $mobile; ?>"><i class="fa fa-mobile" aria-hidden="true"></i> <?php print $mobile; ?></a></p>
 								</div>
 							</div>
 						<?php 
 							endif;
 							if($whatsapp): ?> 
 								<div class="footer-whatsapp group">
-									<div class='footer-icon'>
-										<i class="fa fa-whatsapp" aria-hidden="true"></i>
-									</div>
 									<div class='footer-content'>
-										<p><a href="tel:<?php print $whatsapp; ?>"><?php print $whatsapp; ?></a></p>
+										<p><a href="tel:<?php print $whatsapp; ?>"><i class="fa fa-whatsapp" aria-hidden="true"></i> <?php print $whatsapp; ?></a></p>
 									</div>
 								</div>
 						<?php endif; ?>
-						<?php if($email): ?> 
-							<div class="footer-email group">
-								<div class='footer-icon'>
-									<i class="fa fa-envelope" aria-hidden="true"></i>
-								</div>
-								<div class='footer-content'>
-									<p><a href='<?php print $email; ?>'><?php print $email; ?></a></p>
-								</div>
-							</div>
-						<?php endif; 	?>
+						
 				</div>
 				<div class="footer-top-right col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<div class="footer-logo">
@@ -115,6 +92,13 @@
 						<?php if($googleplus): ?><a href="<?php print $googleplus; ?>" target="_blank"><i class="fa fa-google-plus-official fa-2x sn_icons" aria-hidden="true"></i></a><?php endif; ?>
 						<?php if($twitter): ?><a href="<?php print $twitter; ?>" target="_blank"><i class="fa fa-twitter fa-2x sn_icons" aria-hidden="true"></i></a><?php endif; ?>
 					</div>
+					<?php if($email): ?> 
+						<div class="footer-email group">
+							<div class='footer-content'>
+								<p><a href='<?php print $email; ?>'><i class="fa fa-envelope" aria-hidden="true"></i> <?php print $email; ?></a></p>
+							</div>
+						</div>
+					<?php endif; 	?>
 				</div>
 			</div>
 			<div class='footer-bottom col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>

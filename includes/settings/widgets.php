@@ -9,31 +9,6 @@
 			);
 		}
 		
-		public function update( $new_instance, $old_instance ) {
-			$instance = array();
-			$instance['title'] = strip_tags( $new_instance['title'] );
-			$instance['dis_posts'] = strip_tags( $new_instance['dis_posts'] );
-
-			return $instance;
-		}
-
-		public function form( $instance ) {
-			$title = (isset( $instance[ 'title' ])) ? esc_attr($instance['title']) : 'Recent Posts';
-			$dis_posts = (isset( $instance['dis_posts'])) ? esc_attr($instance['dis_posts']) : '3';
-		?>
-			<p>
-				<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?>
-					<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
-				</label>
-			</p>
-	    <p>
-	    	<label for="<?php echo $this->get_field_id('dis_posts'); ?>"><?php _e('Number of Posts Displayed:'); ?>
-	    		<input class="widefat" id="<?php echo $this->get_field_id('dis_posts'); ?>" name="<?php echo $this->get_field_name('dis_posts'); ?>" type="text" value="<?php echo $dis_posts; ?>" />
-	    	</label>
-	    </p>
-		<?php 
-		}
-
 		public function widget( $args, $instance ) {
 			extract( $args );
 			$title = apply_filters( 'widget_title', $instance['title'] );
@@ -83,6 +58,34 @@
 			wp_reset_postdata();
 			echo $after_widget; 
 		}
+
+		public function update( $new_instance, $old_instance ) {
+			$instance = array();
+			$instance['title'] = strip_tags( $new_instance['title'] );
+			$instance['dis_posts'] = strip_tags( $new_instance['dis_posts'] );
+
+			return $instance;
+		}
+
+		public function form( $instance ) {
+			$title = (isset( $instance[ 'title' ])) ? esc_attr($instance['title']) : 'Recent Posts';
+			$dis_posts = (isset( $instance['dis_posts'])) ? esc_attr($instance['dis_posts']) : '3';
+		?>
+			<p>
+				<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?>
+					<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+				</label>
+			</p>
+	    <p>
+	    	<label for="<?php echo $this->get_field_id('dis_posts'); ?>"><?php _e('Number of Posts Displayed:'); ?>
+	    		<input class="widefat" id="<?php echo $this->get_field_id('dis_posts'); ?>" name="<?php echo $this->get_field_name('dis_posts'); ?>" type="text" value="<?php echo $dis_posts; ?>" />
+	    	</label>
+	    </p>
+		<?php 
+		}
 	}
-	register_widget( 'Dohko_Recent_Posts_Widget' );
-?> 
+	function load_wdidget(){
+		register_widget( 'Dohko_Recent_Posts_Widget' );
+	}
+	add_action("wdigets_init","load_widget");
+?>

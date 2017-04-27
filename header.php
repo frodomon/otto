@@ -17,8 +17,9 @@
 	  	<div class="header-logo">
 	      <?php $logo= get_option( 'dohko_logo');
 	      	if (strcmp($logo, '') === 0) { $logo = IMAGES.'/dohko logo.png'; } 
+          $url = home_url( '/' );
 	       ?>
-	      <img id="logo-header" src="<?php print $logo; ?>" alt="<?php bloginfo('name'); ?>" />
+	      <a href="<?php echo esc_url($url) ?>"><img id="logo-header" src="<?php print $logo; ?>" alt="<?php bloginfo('name'); ?>" /></a>
 	    </div>
       <div class="header-menu">
       	<?php

@@ -90,16 +90,18 @@
                 get_template_part( 'includes/recent_posts_widget/layout', get_post_format() );
               }
               else { ?>
-                <div class='related_thumbnail'>
-                  <?php if ( has_post_thumbnail()) { ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                      <?php $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
-                      <img src="<?php echo $post_thumbnail_url; ?>" /> 
-                    </a>
-                  <?php } ?>
+                <?php if ( has_post_thumbnail()) { 
+                  $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                    <div class='related_thumbnail' style="background: url('<?php echo $post_thumbnail_url; ?>') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover;  -o-background-size: cover; background-size: cover;">
+                    </div>
+                  </a>  
+              <?php } } ?>
+              <a href="<?php the_permalink(); ?>">
+                <div class='related_title'>
+                  <h4 class="no-margin rp_title"><?php the_title(); ?></h4>
                 </div>
-              <?php } ?>
-              <h4 class='rp_title'><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              </a>
           </div>
         <?php }
         echo '</div>';

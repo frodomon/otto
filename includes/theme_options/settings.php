@@ -6,6 +6,7 @@
     add_submenu_page("dohko-theme-options", "Header Theme Options", "Header Options", "manage_options", "dohko-header-options", "dohko_header_options_page");
     add_submenu_page("dohko-theme-options", "Social Profile Options", "Social Profile", "manage_options", "dohko-social-profile", "dohko_social_profile_page");
     add_submenu_page("dohko-theme-options", "Contact Options", "Contact Options", "manage_options", "dohko-contact-options", "dohko_contact_options_page");
+    add_submenu_page("dohko-theme-options", "About Us Options", "About Us Options", "manage_options", "dohko-about-us-options", "dohko_about_us_options_page");
 
   
     add_action( 'admin_init', 'dohko_register_settings' );
@@ -36,6 +37,14 @@
     register_setting( 'dohko-settings-contact', 'dohko_working_days_2' );
     register_setting( 'dohko-settings-contact', 'dohko_working_hours_3' );
     register_setting( 'dohko-settings-contact', 'dohko_working_days_3' );
+    register_setting( 'dohko-settings-about-us', 'dohko_about_p1' );
+    register_setting( 'dohko-settings-about-us', 'dohko_about_p2' );
+    register_setting( 'dohko-settings-about-us', 'dohko_about_p3' );
+    register_setting( 'dohko-settings-about-us', 'dohko_about_p4' );
+    register_setting( 'dohko-settings-about-us', 'dohko_mission' );
+    register_setting( 'dohko-settings-about-us', 'dohko_vision' );
+    
+    
   }
 
   function dohko_header_options_page(){
@@ -100,11 +109,10 @@
         </p>
       </form>
     </div>
-<?php }
+  <?php }
 
   function dohko_settings_page() {
   } 
-
   function dohko_footer_options_page(){
   ?>
     <div class="wrap">
@@ -117,8 +125,61 @@
             <td>
               <textarea name="dohko_analytics"><?php print get_option('dohko_analytics'); ?></textarea>
             </td>
+          </tr> 
+        </table>
+         <p class="submit">
+          <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        </p>
+      </form>
+    <div>
+  <?php }
+  function dohko_about_us_options_page(){
+  ?>
+    <div class="wrap">
+      <h2>Dohko About Us Options</h2>
+      <form method="post" action="options.php">
+        <?php settings_fields( 'dohko-settings-about-us' ); ?>
+        <table class="form-table">
+           <tr>
+            <th scope="row">About Us Paragraph Nro 1:</th>
+            <td>
+              <textarea name="dohko_about_p1" style="width:100%; height:100px;"><?php print get_option('dohko_about_p1'); ?></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">About Us Paragraph Nro 2:</th>
+            <td>
+              <textarea name="dohko_about_p2" style="width:100%; height:100px;"><?php print get_option('dohko_about_p2'); ?></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">About Us Paragraph Nro 3:</th>
+            <td>
+              <textarea name="dohko_about_p3" style="width:100%; height:100px;"><?php print get_option('dohko_about_p3'); ?></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">About Us Paragraph Nro 4:</th>
+            <td>
+              <textarea name="dohko_about_p4" style="width:100%; height:100px;"><?php print get_option('dohko_about_p4'); ?></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Mission:</th>
+            <td>
+              <textarea name="dohko_mission" style="width:100%; height:100px;"><?php print get_option('dohko_mission'); ?></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Vision:</th>
+            <td>
+              <textarea name="dohko_vision" style="width:100%; height:100px;"><?php print get_option('dohko_vision'); ?></textarea>
+            </td>
           </tr>
         </table>
+         <p class="submit">
+          <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        </p>
       </form>
     <div>
   <?php }
