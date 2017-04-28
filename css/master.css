@@ -168,10 +168,11 @@ div.aligncenter {
 	display: block;
 	font-family: 'Raleway';
 	text-transform: uppercase;
+	color:#1E3440;
 }
 .section-title{
 	font-size:3rem;
-	color: #6B6868;
+	color: #1E3440;
 	margin:0;
 	padding-bottom: 2rem;
 	text-align: center;
@@ -179,6 +180,7 @@ div.aligncenter {
 	font-weight: bold;
 }
 .section-description{
+	color:#1E3440;
 	font-size: 1.5rem;
 	text-align: center;
 	font-family: 'Raleway';
@@ -280,8 +282,10 @@ hr{
 	height: 6px;
 	border: none;
 	display: block;
-	background-color: #1E3440;
 	margin: 0;
+}
+.header_separator{
+	background-color: #1E3440;
 }
 /*-----------------------TOOGLE MENU-----------------------------*/
 .fa-bars,
@@ -377,8 +381,7 @@ footer a:hover{
 	padding-right: 0 !important;
 }
 .footer-top-left,
-.footer-top-left-center,
-.footer-top-right-center,
+.footer-top-center,
 .footer-top-right{
 	float: left;
 	display: flex;
@@ -386,7 +389,7 @@ footer a:hover{
 	justify-content: center;
 	align-items: center;
 	padding: 0 !important;
-	min-height:200px;
+	min-height: 150px;
 }
 .footer-icon{
 	float:left;
@@ -465,39 +468,11 @@ footer a:hover{
 .footer-whatsapp,
 .footer-working_days,
 .footer-email{
-	margin-bottom:10px;
+	margin:0.7rem 0;
 	width:100%;
 }
 
 /* ------------------------------FRONT-PAGE---------------------- */
-#featured{
-	padding-bottom: 32px;
-}
-
-#featured .business-info h2{
-	margin: 0; padding: 0;
-	color: #c94623;
-	font-size: 1.29em;
-}
-
-#featured .business-info p, .widget p{
-	padding: 0;
-	margin: 0 0 30px 0;
-}
-
-#featured .main{
-	width: 66%;
-	height: 270px;
-	overflow: hidden;
-	background: #CFCFCF;
-}
-
-#posts a.visit{
-	border-top: 1px #d4d4d4 solid;
-	border-bottom: 1px #d4d4d4 solid;
-	padding: 13px 5px;
-	display: block;
-}
 
 /* ------------------------------- SLIDER ---------------------- */
 #slideshow{
@@ -614,6 +589,33 @@ footer a:hover{
 	margin:0;
 	font-size: 1rem;
 }
+/*--------------------Front Client-----------------------*/
+#clients{
+	width:100%;
+	padding: 5rem 0 5rem 0;
+	background-color: #DADADA;
+}
+.clients{
+	padding-top: 2rem;
+	width:80%;
+	margin:0 10%;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.client{
+	float:left;
+	--margen: 1.5rem;
+	--ancho: calc(25% - (var(--margen)));
+	width: var(--ancho);
+	margin: 0.75rem;
+}
+.client img{
+	width:100%;
+	display:block;
+}
+
 /* ------------------------------ABOUT US---------------------- */
 #about_us{
 	width: 100%;
@@ -776,8 +778,8 @@ footer a:hover{
 .contact-email{
 	text-align: center;
 }
-.contact-content{
-
+.contact-content p{
+	color:#1E3440;
 }
 .working_days{
 	width: 80%;
@@ -806,6 +808,9 @@ footer a:hover{
 .contact-working_days p{
 	padding: 0;
 	margin:0;
+}
+.contact-working_days p{
+	color:#1E3440;
 }
 .gmaps{
 	display: block;
@@ -840,6 +845,9 @@ footer a:hover{
 	background-color: #FFFFFF;
 	float: left;
 }
+.contact-form p{
+	color:#1E3440;
+}
 .wpcf7{
 	width:100%;
 }
@@ -853,6 +861,7 @@ footer a:hover{
 }
 .wpcf7-text{
 	width:100%;
+	color:#1E3440;
 }
 .cf-inline{
 	float:left;
@@ -868,6 +877,7 @@ footer a:hover{
 .wpcf7-textarea{
 	width:100%;
 	max-height: 100px;
+	color:#1E3440;
 }
 .cf-button{
 	margin-bottom: 1rem;
@@ -1438,6 +1448,11 @@ aside {
 		width: 90%;
 		margin: 0 5%;
 		text-align: left;
+	}
+	.footer-top-left,
+	.footer-top-center,
+	.footer-top-right{
+		min-height: auto;
 	}
 	.related_post{
 		width: 100%;

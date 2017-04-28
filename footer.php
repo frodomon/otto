@@ -2,10 +2,7 @@
 			<div class="footer-menu col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 			</div>
 			<div class="footer-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="footer-top-left col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-					
-				</div>
-				<div class="footer-top-left-center col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+				<div class="footer-top-left col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 					<?php 
 						$address_line_1 = get_option('dohko_address_line_1');
 						$address_line_2 = get_option('dohko_address_line_2');
@@ -20,29 +17,6 @@
 							</div>
 						</div>
 					<?php endif; ?>
-					<?php 
-						$working_days_1 = get_option('dohko_working_days_1');
-						$working_days_2 = get_option('dohko_working_days_2');
-						$working_days_3 = get_option('dohko_working_days_3');
-						$working_hours_1 = get_option('dohko_working_hours_1');
-						$working_hours_2 = get_option('dohko_working_hours_2');
-						$working_hours_3 = get_option('dohko_working_hours_3');
-
-						if($working_days_1): ?> 
-							<div class='footer-working_days group'>
-								<div class='footer-content'>
-									<p class="padding-abajo"><i class="fa fa-clock-o" aria-hidden="true"></i> Horario de Atención</p>
-									<?php if($working_days_1): ?><p><?php print $working_days_1; ?></p><?php endif; ?>
-									<?php if($working_hours_1): ?><p class="padding-abajo"><?php print $working_hours_1; ?></p><?php endif; ?>
-									<?php if($working_days_2): ?><p><?php print $working_days_2; ?></p><?php endif; ?>
-									<?php if($working_hours_2): ?><p class="padding-abajo"><?php print $working_hours_2; ?></p><?php endif; ?>
-									<?php if($working_days_3): ?><p><?php print $working_days_3; ?></p><?php endif; ?>
-									<?php if($working_hours_3): ?><p><?php print $working_hours_3; ?></p><?php endif; ?>
-								</div>
-							</div>
-					<?php endif; ?>
-				</div>
-				<div class="footer-top-right-center col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<?php 
 						$telephone = get_option('dohko_telephone');
 						$mobile = get_option('dohko_mobile');
@@ -72,9 +46,32 @@
 									</div>
 								</div>
 						<?php endif; ?>
-						
 				</div>
-				<div class="footer-top-right col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+				<div class="footer-top-center col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+
+					<?php 
+						$working_days_1 = get_option('dohko_working_days_1');
+						$working_days_2 = get_option('dohko_working_days_2');
+						$working_days_3 = get_option('dohko_working_days_3');
+						$working_hours_1 = get_option('dohko_working_hours_1');
+						$working_hours_2 = get_option('dohko_working_hours_2');
+						$working_hours_3 = get_option('dohko_working_hours_3');
+
+						if($working_days_1): ?> 
+							<div class='footer-working_days group'>
+								<div class='footer-content'>
+									<p class="padding-abajo"><i class="fa fa-clock-o" aria-hidden="true"></i> Horario de Atención</p>
+									<?php if($working_days_1): ?><p><?php print $working_days_1; ?></p><?php endif; ?>
+									<?php if($working_hours_1): ?><p class="padding-abajo"><?php print $working_hours_1; ?></p><?php endif; ?>
+									<?php if($working_days_2): ?><p><?php print $working_days_2; ?></p><?php endif; ?>
+									<?php if($working_hours_2): ?><p class="padding-abajo"><?php print $working_hours_2; ?></p><?php endif; ?>
+									<?php if($working_days_3): ?><p><?php print $working_days_3; ?></p><?php endif; ?>
+									<?php if($working_hours_3): ?><p><?php print $working_hours_3; ?></p><?php endif; ?>
+								</div>
+							</div>
+					<?php endif; ?>
+				</div>
+				<div class="footer-top-right col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 					<div class="footer-logo">
 						<img id="footer-logo" src="<?php echo get_template_directory_uri().'/images/dohko logo inv.png'; ?>">
 						<?php

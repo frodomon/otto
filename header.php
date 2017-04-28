@@ -23,15 +23,22 @@
 	    </div>
       <div class="header-menu">
       	<?php
-          get_search_form();
-      	  wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'sf-menu' ));
+          if ( is_front_page() ) { ?>
+          <div class="header-searchbar"></div>
+        <?php
+          } else {
+            get_search_form();
+          }
+            
+      	  
+          wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'sf-menu' ));
         ?>
         <div class="togglemenu">
           <a class="togglebar" href="#" title="Menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
     </header>	
-    <hr/>
+    <hr class="header_separator"/>
     <div class="responsive-menu">
         <?php wp_nav_menu( array( 'theme_location' => 'primary mobile', 'menu_class' => 'toggle-menu' ) ); ?>
     </div>

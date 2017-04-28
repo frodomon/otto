@@ -84,8 +84,8 @@
 		<?php 
 		}
 	}
-	function load_wdidget(){
+	function load_widget(){
 		register_widget( 'Dohko_Recent_Posts_Widget' );
 	}
-	add_action("wdigets_init","load_widget");
+	add_action("widgets_init","load_widget");
 ?>

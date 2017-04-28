@@ -21,6 +21,7 @@
   </ul>
 </section>
 <?php get_template_part( 'home', 'services' ); ?>
+<?php get_template_part( 'home', 'clients' ); ?>
 <?php get_template_part( 'home', 'blog' ); ?>
 <?php get_footer(); ?>
 

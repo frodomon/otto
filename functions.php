@@ -30,20 +30,10 @@
 
   require_once(INCLUDES.'/tgm/tgm.php' );
 
-  require_once('business-manager.php');
   require_once(INCLUDES.'/post_types/slider.php');
   require_once(INCLUDES.'/post_types/services.php');
+  require_once(INCLUDES.'/post_types/clients.php');
 
-//  require_once('director-widgets.php');
-//add_action( 'widgets_init', create_function( '', 'register_widget( "director_featured_business" );' ) );
-
-add_action('init', 'director_rewrite');
-function director_rewrite() {
-  global $wp_rewrite;
-  $wp_rewrite->add_permastruct('typename', 'typename/%year%/%postname%/', true, 1);
-  add_rewrite_rule('typename/([0-9]{4})/(.+)/?$', 'index.php?typename=$matches[2]', 'top');
-  $wp_rewrite->flush_rules(); // !!!
-}
   remove_action('wp_head', 'rsd_link');
   remove_action('wp_head', 'wp_generator');
   remove_action('wp_head', 'feed_links', 2);

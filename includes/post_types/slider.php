@@ -13,6 +13,7 @@
       'has_archive' => true,
       'supports' => array('title', 'editor', 'thumbnail'),
       'rewrite' => array('slug' => 'slides', 'with_front' => false),
+      'menu_icon' => 'dashicons-images-alt2',
     );  
     //Register type and custom taxonomy for type.
     register_post_type( 'slides' , $args );   
