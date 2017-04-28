@@ -732,6 +732,30 @@ footer a:hover{
 	margin:0;
 	padding: 1rem 0;
 }
+.service-img,
+.service-page-content{
+	--margen: 0.75rem;
+	--ancho: calc(50% - (var(--margen)));
+	width: var(--ancho);
+	height: 500px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.service-img{
+	margin-right: 0.75rem;
+}
+.service-page-content{
+	margin-left: 0.75rem;
+	padding: 2rem 2.5%;
+	margin:0;
+}
+.service-page-content h2{
+	padding-top:0;
+}
+.service-page-content .service-content{
+	margin:0;
+	padding: 0;
+}
 /*--------------------CONTACT PAGE-----------------------*/
 #contact_us{
 	width: 100%;
@@ -1522,5 +1546,21 @@ aside {
 	}
 	.slide-description{
 		font-size: 2.5rem;
+	}
+	.client{
+		width:100%;
+		margin:0.75rem 0;
+	}
+	.service-img,
+	.service-page-content{
+		width:100%;
+		margin: 0.75rem 0;
+	}
+	.service-img{
+		height:250px;
+	}
+	.service-page-content{
+		height:auto;
+		padding:2rem 5%;
 	}
 }
