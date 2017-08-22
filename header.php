@@ -29,8 +29,6 @@
           } else {
             get_search_form();
           }
-            
-      	  
           wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'sf-menu' ));
         ?>
         <div class="togglemenu">

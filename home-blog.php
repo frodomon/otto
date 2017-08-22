@@ -22,7 +22,7 @@
       <div class="news-post group">
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
           <?php $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
-          <div class="news-thumbnail" style="background:url(<?php echo $post_thumbnail_url; ?>) no-repeat center center; background-size:110%">
+          <div class="news-thumbnail" style="background:url(<?php echo $post_thumbnail_url; ?>) no-repeat center center; background-size:cover">
           </div>
         </a>
         <div class='news-post-content group'>

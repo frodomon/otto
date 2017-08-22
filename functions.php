@@ -5,15 +5,16 @@
   define('INCLUDES2', DOHKO_DIR."/includes"); 
   define('INCLUDES', DOHKO_TEMPLATE_DIR."/includes"); 
   define('JAVASCRIPTS', DOHKO_DIR."/js");
-  require_once(INCLUDES.'/settings/widgets.php');
   include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
   
   require_once(INCLUDES.'/scripts.php');
 
+  require_once(INCLUDES.'/settings/attachments.php');
+  require_once(INCLUDES.'/settings/excerpt.php');
   require_once(INCLUDES.'/settings/menus.php');
   require_once(INCLUDES.'/settings/sidebars.php');
   require_once(INCLUDES.'/settings/thumbnails.php');
-  require_once(INCLUDES.'/settings/excerpt.php');
+  require_once(INCLUDES.'/settings/widgets.php');
   
 
   require_once(INCLUDES.'/masterpieces/pagination.php');
@@ -33,6 +34,8 @@
   require_once(INCLUDES.'/post_types/slider.php');
   require_once(INCLUDES.'/post_types/services.php');
   require_once(INCLUDES.'/post_types/clients.php');
+  require_once(INCLUDES.'/post_types/suppliers.php');
+  require_once(INCLUDES.'/post_types/products.php');
 
   remove_action('wp_head', 'rsd_link');
   remove_action('wp_head', 'wp_generator');
