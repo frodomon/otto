@@ -1,5 +1,5 @@
 /*
-Theme Name: Dohko
+Theme Name: Dohko Otto
 Author: Alfredo Vásquez
 Author URI: http://www.alfredovasquezalcala.com
 Description: A general purpose theme.
@@ -13,5 +13,6 @@ Tags: masonry
 @import url("css/fonts.css");
 @import url("css/flexslider.css");
 @import url("css/master.css");
+@import url("css/responsive.css");
 @import url("css/ie.css");
 @import url("css/superfish.css");

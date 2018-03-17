@@ -12,4 +12,21 @@ jQuery(document).ready(function() {
 		  }
 		});
 	});
+	jQuery(window).scroll(function () {
+		if ( jQuery(window).width() < 768 ){
+			jQuery('header').addClass('fixed-header')
+			jQuery('#slideshow').css('padding-top','80px')
+		}
+		else{
+			if( jQuery(window).scrollTop() >= 251 ){
+				jQuery('#logo-fixed').css('display','block');	
+				jQuery('.header-menu').addClass('fixed-header');
+			}
+			else if ( (jQuery(window).scrollTop() <= 250) ){
+				jQuery('#logo-fixed').css('display','none');	
+				jQuery('.header-menu').removeClass('fixed-header');
+			}
+		}
+	});
+
 });

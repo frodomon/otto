@@ -27,7 +27,7 @@ get_header();  ?>
 						$mobile = get_option('dohko_mobile');
 						$whatsapp = get_option('dohko_whatsapp');
 					
-						if($telephone ): ?> 
+						if($telephone || $mobile || $whatsapp ): ?> 
 							<div class="contact-phone group">
 								<div class='contact-content'>
 									<p class="padding-abajo negrita"><i class="fa fa-phone" aria-hidden="true"></i> Llámanos:</p>
@@ -45,7 +45,7 @@ get_header();  ?>
 							<div class="contact-email group">
 								<div class='contact-content'>
 									<p class="padding-abajo negrita"><i class="fa fa-envelope" aria-hidden="true"></i> Escríbenos:</p>
-									<p><a href='<?php print $email; ?>'><?php print $email; ?></a></p>
+									<p><a href='mailto:<?php print $email; ?>'><?php print $email; ?></a></p>
 								</div>
 							</div>
 					<?php endif; 	?>
@@ -102,13 +102,13 @@ get_header();  ?>
 		</div>
 	</div>
 	<div class="contact-middle group">
-		<div class='gmaps'>			
-			<iframe class="gm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6405979924034!2d-77.07896888600206!3d-12.068231145584065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c914fe661ed9%3A0xbab84830072d24be!2sEl+Tablero+de+Otto!5e0!3m2!1ses-419!2spe!4v1488544967431"  frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class='gmaps'>
+			<?php echo do_shortcode('[wpgmza id="1"]'); ?>
 		</div>
 		<div class='contact-form'>
 			<p class="padding-abajo negrita"><i class="fa fa-envelope" aria-hidden="true"></i> Escríbenos:</p>
-			<p class="padding-abajo no-margin negrita">Para cualquier consulta que tengas sobre nuestros productos o servicios, no dude en dejarnos un mensaje. Nosotros responderemos en un plazo máximo de 12 horas.</p>
-			<?php echo do_shortcode('[contact-form-7 id="210" title="Formulario de contacto 1"]'); ?>
+			<p class="padding-abajo no-margin negrita">Para cualquier consulta que tengas, no dudes en dejarnos un mensaje. Nosotros responderemos en un plazo máximo de 12 horas.</p>
+			<?php echo do_shortcode('[contact-form-7 id="12" title="Contacto"]'); ?>
 		</div>
 	</div>
 </section>

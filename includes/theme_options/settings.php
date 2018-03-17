@@ -7,6 +7,7 @@
     add_submenu_page("dohko-theme-options", "Social Profile Options", "Social Profile", "manage_options", "dohko-social-profile", "dohko_social_profile_page");
     add_submenu_page("dohko-theme-options", "Contact Options", "Contact Options", "manage_options", "dohko-contact-options", "dohko_contact_options_page");
     add_submenu_page("dohko-theme-options", "About Us Options", "About Us Options", "manage_options", "dohko-about-us-options", "dohko_about_us_options_page");
+    add_submenu_page("dohko-theme-options", "Footer Theme Options", "Footer Options", "manage_options", "dohko-footer-options", "dohko_footer_options_page");
 
   
     add_action( 'admin_init', 'dohko_register_settings' );

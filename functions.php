@@ -43,4 +43,10 @@
   remove_action('wp_head', 'start_post_rel_link', 10, 0);
   remove_action('wp_head', 'parent_post_rel_link', 10, 0);
   remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
+
+  function qtranslate_filter( $text ) { return __( $text ); }
+  add_filter( 'wpseo_title', 'qtranslate_filter', 10, 1 );
+  add_filter( 'wpseo_metadesc', 'qtranslate_filter', 10, 1 );
+  add_filter( 'wpseo_metakey', 'qtranslate_filter', 10, 1 );
+  add_filter( 'wpseo_opengraph_title', 'qtranslate_filter', 10, 1 );
 ?>

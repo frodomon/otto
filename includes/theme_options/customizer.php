@@ -407,6 +407,10 @@
       .sn_icons:focus{
         color: <?php echo $footer_text_hover; ?>; 
       }
+      .footer-bot a:hover,
+      .footer-bot a:visited{
+        color: <?php echo $footer_text; ?>; 
+      }
       /* FRONT-PAGE */
       .section-separator{
         background-color: <?php echo $separator; ?>; 
