@@ -13,9 +13,11 @@ jQuery(document).ready(function() {
 		});
 	});
 	jQuery(window).scroll(function () {
-		if ( jQuery(window).width() < 768 ){
+		if ( jQuery(window).width() < 1024 ){
 			jQuery('header').addClass('fixed-header')
 			jQuery('#slideshow').css('padding-top','80px')
+			jQuery('#main').css('margin-top','80px');
+			jQuery('#contact_us').css('margin-top','80px');
 		}
 		else{
 			if( jQuery(window).scrollTop() >= 251 ){

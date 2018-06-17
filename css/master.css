@@ -231,7 +231,7 @@ div.aligncenter {
 }
 /* ------------------------------HEADER---------------------- */
 header{
-  height:300px;
+  height:230px;
   text-align: center;
   background-color: #1E3440;
   width:100%;
@@ -247,7 +247,7 @@ header h1{
 }
 .header-top{
 	width:100%;
-	height:250px;
+	height:180px;
 }
 .h-mid{
 	width:60%;
@@ -402,9 +402,6 @@ hr{
   color: #00C0BC;
   text-align: left;
 }
-.toggle-menu li:last-child{
-  padding-bottom: 0;
-}
 .toggle-menu li:hover{
   background-color: #3C687F;
 }
@@ -448,6 +445,28 @@ hr{
 	margin: 0;
 }
 /* ------------------------------FOOTER---------------------- */
+#instagram-feed{
+	width:100%;
+	background-color: #EFEFEF;
+}
+.follow-ig{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.ig-text{
+	color: #000000;
+	font-size:1.3rem;
+	padding: 1rem 0;
+	margin:0;
+	text-align: center;
+}
+.ig-link{
+	color: #1E3440 !important ;
+}
+
 footer{
 	width:100%;
 	float: left;
@@ -468,8 +487,8 @@ footer a:hover{
 	width:40%;
 	margin: 0 30%;
 	float:left;
-	padding-top: 4rem;
-	padding-bottom: 2rem
+	padding-top: 2rem;
+	padding-bottom: 1rem
 }
 .footer-logo{
 	width:60%;
@@ -527,7 +546,6 @@ footer a:hover{
 .footer-bottom{
 	width: 100%;
 	float:left;
-	margin-top: 20px;
 	padding: 0 !important;
 }
 .footer-bottom-left,
@@ -565,11 +583,10 @@ footer a:hover{
 .slides{
 	margin:0;
 	padding:0;
-	width:100%;
+	width: 100%;
 	height: 100%;
 }
 .slide{
-	width:100%;
 	height: 100%;
 }
 .slide img{
@@ -677,6 +694,7 @@ footer a:hover{
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+	min-height: 250px;
 }
 .sneak-peak-r{
 	width:50%;
@@ -687,6 +705,7 @@ footer a:hover{
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+	min-height: 250px;
 }
 .sneak-peak-l p,
 .sneak-peak-r p,
@@ -695,7 +714,19 @@ footer a:hover{
 	color: #FFFFFF;
 	margin:0;
 }
-
+/*--------------------Eventos-----------------------*/
+.tribe-events-event-url{
+	overflow: scroll;
+}
+/*--------------------FrontProducts-----------------------*/
+#products{
+	width:80%;
+	margin:0 10%;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
 /*--------------------FrontBLOG-----------------------*/
 #news{
 	width:100%;
@@ -912,6 +943,33 @@ footer a:hover{
 .service-page-content .service-content{
 	margin:0;
 	padding: 0;
+}
+/*--------------------INTERTIENDAS PAGE-----------------------*/
+#intertiendas{
+	width: 100%;
+	padding: 3rem 10% 3rem 10%;
+	background-color: #FFFFFF;
+	text-align: center
+}
+.liga-content{
+	padding: 1.5rem 0;
+	text-align: center;
+}
+.liga-content h2{
+	color:#1E3440;
+	margin:0;
+	padding-bottom: 1rem;
+}
+.liga-images{
+	width:100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+.liga-images img{
+	display: block;
+	width:100%;
 }
 /*--------------------CONTACT PAGE-----------------------*/
 #contact_us{
@@ -1536,8 +1594,48 @@ aside {
 	color: #CFCFCF;
 }
 .main-content{
-	width:90%;
+	width:100%;
 	margin:0;
 	background-color: #FFFFFF;
 	padding: 5%;
+}
+/*--------------------Magic-----------------------*/
+.group-images{
+	width:80%;
+	padding: 1rem 0;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.centered-group{
+	width:80%;
+	padding: 1rem 0;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;	
+}
+.img-group{
+	width:auto;
+	height:300px;
+	float:left;
+}
+.full-width-img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+.main-content h2{
+	margin:0;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+}
+.text-content{
+	margin:0;
+	padding: 0.5 0;
+
 }

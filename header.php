@@ -4,7 +4,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php bloginfo('name'); ?> | <?php wp_title(''); ?></title>
+  <title><?php wp_title(''); ?></title>
   <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -50,7 +50,7 @@
         <div class="h-menu">
           <?php wp_nav_menu( array('menu' => 'Main', 'menu_class' => 'sf-menu' )); ?>
         </div>
-        <?php get_search_form(); ?>
+        <div class="header-searchbar"></div>
         <div class="togglemenu">
           <button class="togglebar" href="#" title="Menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
         </div>
@@ -58,6 +58,4 @@
       <div class="responsive-menu">
         <?php wp_nav_menu( array( 'theme_location' => 'primary mobile', 'menu_class' => 'toggle-menu' ) ); ?>
       </div>
-
-    </header>	
-    <hr class="header_separator"/>
+    </header>

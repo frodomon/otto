@@ -12,9 +12,4 @@
 		wp_enqueue_script( 'script-superfish', JAVASCRIPTS .'/superfish.js', array(), '1.0.0', true );
 	}
 	add_action( 'wp_enqueue_scripts', 'dohko_scripts' );
-	function dohko_admin_scripts(){
-		wp_enqueue_style( 'metabox-style', DOHKO_DIR.'/css/metabox.css');
-		wp_enqueue_script( 'media-manager-metabox', JAVASCRIPTS .'/media-upload-meta-box.js', array(), '1.0.0', true );
-	}
-	add_action('admin_enqueue_scripts','dohko_admin_scripts');
 ?>

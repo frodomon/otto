@@ -10,10 +10,11 @@
   
   require_once(INCLUDES.'/scripts.php');
 
+  
   require_once(INCLUDES.'/settings/menus.php');
   require_once(INCLUDES.'/settings/sidebars.php');
   require_once(INCLUDES.'/settings/thumbnails.php');
-  require_once(INCLUDES.'/settings/excerpt.php');
+  require_once(INCLUDES.'/settings/excerpt.php');  
   
 
   require_once(INCLUDES.'/masterpieces/pagination.php');

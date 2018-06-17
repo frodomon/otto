@@ -17,7 +17,7 @@
       )
     );
     $wp_customize->add_setting(
-      'header_text' , array(
+      'text_header' , array(
         'default' => '#FFFFFF',
         'type' => 'option',
         'transport' => 'postMessage',
@@ -150,11 +150,11 @@
     );
     $wp_customize->add_control(
       new WP_Customize_Color_Control( 
-        $wp_customize, 'header_text', array(
+        $wp_customize, 'text_header', array(
           'label' => 'Header Text Color',
           'description' => 'Text color for Header',
           'section' => 'theme_colors',
-          'settings' => 'header_text'
+          'settings' => 'text_header'
         )
       )
     );
@@ -302,7 +302,7 @@
   
   function dohko_customize_colors() {
     $bg_header = get_option( 'bg_header' );
-    $header_text = get_option( 'header_text' );
+    $header_text = get_option( 'text_header' );
     $header_text_hover = get_option( 'header_text_hover' );
     $header_separator = get_option( 'header_separator' );
     $bg_footer = get_option( 'bg_footer' );
@@ -346,11 +346,11 @@
       .sf-menu .menu-item a:hover{
         color: <?php echo $header_text_hover; ?>; 
       }
-      .sf-menu .sub-menu .menu-item a{
+      .sf-menu .menu-item .sub-menu .menu-item a{
         color: <?php echo $header_text; ?>; 
         background-color: <?php echo $bg_header; ?>;
       }
-      .sf-menu .sub-menu .menu-item a:hover{
+      .sf-menu .menu-item .sub-menu .menu-item a:hover{
         color: <?php echo $header_text_hover; ?>;
       }
       .header_separator{

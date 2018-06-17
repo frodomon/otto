@@ -3,7 +3,7 @@
     <?php 
       $posts= query_posts(array(
         'post_type' => 'slides',
-        'posts_per_page' => '3',
+        'posts_per_page' => '8',
         'order'=>'ASC'));
       foreach ($posts as $post) :  setup_postdata($post); 
     ?>

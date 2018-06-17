@@ -1,24 +1,30 @@
+		<?php 
+			$address_line_1 = get_option('dohko_address_line_1');
+			$address_line_2 = get_option('dohko_address_line_2');
+			$address_line_3 = get_option('dohko_address_line_3');
+			$telephone = get_option('dohko_telephone');
+			$mobile = get_option('dohko_mobile');
+			$whatsapp = get_option('dohko_whatsapp');
+			$email = get_option('dohko_email');
+			$working_days_1 = get_option('dohko_working_days_1');
+			$working_days_2 = get_option('dohko_working_days_2');
+			$working_days_3 = get_option('dohko_working_days_3');
+			$working_hours_1 = get_option('dohko_working_hours_1');
+			$working_hours_2 = get_option('dohko_working_hours_2');
+			$working_hours_3 = get_option('dohko_working_hours_3');
+			$facebook = get_option('dohko_facebook');
+			$youtube = get_option('dohko_youtube');
+			$instagram = get_option('dohko_instagram');
+			$googleplus = get_option('dohko_googleplus');
+			$twitter = get_option('dohko_twitter');
+		?>
+		<section id="instagram-feed">
+			<div class="follow-ig">
+				<p class="ig-text">Síguenos en Instagram  <a class="ig-link" href="<?php print $instagram; ?>" target="_blank">@eltablerodeotto</a></p>
+			</div>
+			<?php echo do_shortcode('[instagram-feed]'); ?>
+		</section>
 		<footer>
-			<?php 
-				$address_line_1 = get_option('dohko_address_line_1');
-				$address_line_2 = get_option('dohko_address_line_2');
-				$address_line_3 = get_option('dohko_address_line_3');
-				$telephone = get_option('dohko_telephone');
-				$mobile = get_option('dohko_mobile');
-				$whatsapp = get_option('dohko_whatsapp');
-				$email = get_option('dohko_email');
-				$working_days_1 = get_option('dohko_working_days_1');
-				$working_days_2 = get_option('dohko_working_days_2');
-				$working_days_3 = get_option('dohko_working_days_3');
-				$working_hours_1 = get_option('dohko_working_hours_1');
-				$working_hours_2 = get_option('dohko_working_hours_2');
-				$working_hours_3 = get_option('dohko_working_hours_3');
-				$facebook = get_option('dohko_facebook');
-				$youtube = get_option('dohko_youtube');
-				$instagram = get_option('dohko_instagram');
-				$googleplus = get_option('dohko_googleplus');
-				$twitter = get_option('dohko_twitter');
-			?>
 			<div class="footer-top flex-center-col">
 				<div class="footer-logo">
 				  <?php $url = home_url( '/' ); ?>
@@ -57,11 +63,11 @@
 					<?php if($twitter): ?><a href="<?php print $twitter; ?>" target="_blank"><i class="fa fa-twitter fa-2x sn_icons" aria-hidden="true"></i></a><?php endif; ?>
 				</div>
 			</div>
-			<div class='footer-bottom col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
-				<div class='footer-bottom-left col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12'>
+			<div class='footer-bottom'>
+				<div class='footer-bottom-left'>
 					<p class='footer-bot'>Copyright &copy; <?=date('Y');?> <?php bloginfo('name'); ?>. Todos los derechos reservados</p>
 				</div>
-				<div class='footer-bottom-right col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12'>
+				<div class='footer-bottom-right'>
 					<p class='footer-bot'>Desarrollado por <a href="https://pe.linkedin.com/in/alfredohvasqueza" target="_blank"><strong>Alfredo Vásquez</strong></a></p>
 				</div>		
 			</div>	
@@ -69,6 +75,7 @@
 			<!-- End Footer Information -->
 			<?php wp_footer(); ?>  
 			<?php print get_option('dohko_analytics'); ?>
+	</div>
 	</div>
 </body>
 </html>
