@@ -347,6 +347,7 @@ header h1{
 	border: 0;
 }
 .sf-menu .menu-item a{
+	font-family: 'Maven Pro', sans-serif;
 	padding: 0.4375rem 0.9rem;
 	font-size: 1.5rem;
   color: #FFFFFF;
@@ -713,6 +714,7 @@ footer a:hover{
 .sneak-peak-r h3{
 	color: #FFFFFF;
 	margin:0;
+	font-weight: bold;
 }
 /*--------------------Eventos-----------------------*/
 .tribe-events-event-url{
@@ -1607,7 +1609,7 @@ aside {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .centered-group{
 	width:80%;

@@ -14,11 +14,13 @@
 				<p class="text">Si gustas pasar una momento divertido conociendo gente nueva, poniendo a prueba tus habilidades, ponemos a tu disposición nuestro surtida ludoteca con mas de 80 juegos de mesa.</p>
 			</div>
 		</div>
-		<div class="about-pokemon">
-			<div class="sneak-peak-r">
-				<h3 class="text">Pokemon</h3>
-				<p class="text">Proximamente...</p>
+		<a href="<?php echo get_page_link( get_page_by_title( 'Pokémon' )->ID); ?>">
+			<div class="about-pokemon">
+				<div class="sneak-peak-r">
+					<h3 class="text">Pokémon</h3>
+					<p class="text">Pokémon Trading Card Game fue creado en el año 1996 en Japón y en el año 1999 en Europa y Estados Unidos. En la actualidad se imprime en 11 idiomas, y se comercializa en 74 países. Te invitamos a unirte a esta gran comunidad de entrenadores Pokémon.</p>
+				</div>
 			</div>
-		</div>
+		</a>	
 	</div>
 </section>
