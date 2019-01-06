@@ -32,6 +32,40 @@
     );  
     register_post_type( 'products' , $args );   
   }
+
+  add_action( 'init', 'create_product_taxonomies');
+  
+  function create_product_taxonomies() {
+    // Add new taxonomy, make it hierarchical (like categories)
+    $labels = array(
+      'name'              => __( 'Game Lines'),
+      'singular_name'     => __( 'Game Line'),
+      'search_items'      => __( 'Search Game Lines'),
+      'all_items'         => __( 'All Game Lines'),
+      'parent_item'       => __( 'Parent Game Line'),
+      'parent_item_colon' => __( 'Parent Game Line'),
+      'edit_item'         => __( 'Edit Game Line'),
+      'update_item'       => __( 'Update Game Line'),
+      'add_new_item'      => __( 'Add New Game Line'),
+      'new_item_name'     => __( 'New Game Line Name'),
+      'menu_name'         => __( 'Game Lines'),
+    );
+
+    $args = array(
+      'hierarchical'      => true,
+      'labels'            => $labels,
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'query_var'         => true,
+      'rewrite'           => array( 'slug' => 'gamelines' ),
+    );
+
+    register_taxonomy( 'gameline', array( 'products' ), $args );
+
+  }
+
+
+
   function product_add_meta(){  
     add_meta_box("product-meta", "Product Options", "product_meta_options", "products", "normal", "high");   
   }
@@ -41,7 +75,12 @@
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) return $post_id;
         
     $custom = get_post_custom($post->ID);
-    $package = $custom["package"][0]; 
+    $shortname = $custom["shortname"][0]; 
+    $description = $custom["description"][0]; 
+    $preciofull = $custom["preciofull"][0]; 
+    $precioprevta = $custom["precioprevta"][0]; 
+    $preciooferta = $custom["preciooferta"][0]; 
+    $pagolink = $custom["pagolink"][0]; 
     
     $img_id = $custom["img_id"][0]; 
     // Get WordPress' media upload URL
@@ -57,15 +96,55 @@
     <div class="metabox">
       <div class="field group">
         <div class="fieldname">
-          <label>Presentación:</label>
+          <label>Nombre Corto:</label>
         </div>
         <div class="fieldvalue">
-          <input name="package" value="<?php echo $package; ?>" />
+          <input name="shortname" value="<?php echo $shortname; ?>" />
         </div>    
       </div>
       <div class="field group">
         <div class="fieldname">
-          <label>Ficha Técnica:</label>
+          <label>Descripción:</label>
+        </div>
+        <div class="fieldvalue">
+          <input name="description" value="<?php echo $description; ?>" />
+        </div>    
+      </div>
+      <div class="field group">
+        <div class="fieldname">
+          <label>Precio Full:</label>
+        </div>
+        <div class="fieldvalue">
+          <input name="preciofull" value="<?php echo $preciofull; ?>" />
+        </div>    
+      </div>
+      <div class="field group">
+        <div class="fieldname">
+          <label>Precio Pre-Venta:</label>
+        </div>
+        <div class="fieldvalue">
+          <input name="precioprevta" value="<?php echo $precioprevta; ?>" />
+        </div>    
+      </div>
+      <div class="field group">
+        <div class="fieldname">
+          <label>Precio Oferta:</label>
+        </div>
+        <div class="fieldvalue">
+          <input name="preciooferta" value="<?php echo $preciooferta; ?>" />
+        </div>    
+      </div>
+      <div class="field group">
+        <div class="fieldname">
+          <label>Pago Link:</label>
+        </div>
+        <div class="fieldvalue">
+          <input name="pagolink" value="<?php echo $pagolink; ?>" />
+        </div>    
+      </div>
+      <div class="field group">
+        <div class="fieldname">
+          <label>Imagen:</label>
         </div>
         <div class="fieldvalue">
           <div class="docLink">
@@ -103,7 +182,13 @@
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){ //if you remove this the sky will fall on your head.
       return $post_id;
     }else{
-      update_post_meta($post->ID, "package", $_POST["package"]); 
+      update_post_meta($post->ID, "shortname", $_POST["shortname"]); 
+      update_post_meta($post->ID, "description", $_POST["description"]); 
+      update_post_meta($post->ID, "preciofull", $_POST["preciofull"]); 
+      update_post_meta($post->ID, "precioprevta", $_POST["precioprevta"]); 
+      update_post_meta($post->ID, "preciooferta", $_POST["preciooferta"]); 
+      update_post_meta($post->ID, "pagolink", $_POST["pagolink"]); 
+      update_post_meta($post->ID, "img_id", $_POST["img_id"]); 
     } 
   }  
 
@@ -113,7 +198,12 @@
     $columns = array(
       "cb" => "<input type=\"checkbox\" />",
       "title" => "Product Name",
-      "package" => "Package",
+      "shortname" => "Short Name",
+      "description" => "Description",
+      "preciofull" => "Full Price",
+      "precioprevta" => "Pre-Sale Price",
+      "preciooferta" => "Offer Price",
+      "pagolink" => "Pago Link",
     );  
     return $columns;
   } 
@@ -125,9 +215,25 @@
     $custom = get_post_custom();
     switch ($column)
     {
-      case "package":
-        echo $custom["package"][0];
+      case "shortname":
+        echo $custom["shortname"][0];
         break;
+      case "description":
+        echo $custom["description"][0];
+        break;
+      case "preciofull":
+        echo $custom["preciofull"][0];
+        break;
+        case "precioprevta":
+        echo $custom["precioprevta"][0];
+        break;
+        case "preciooferta":
+        echo $custom["preciooferta"][0];
+        break;
+        case "pagolink":
+        echo $custom["pagolink"][0];
+        break;
+        
     }
   } 
 ?>

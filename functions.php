@@ -34,6 +34,8 @@
   require_once(INCLUDES.'/post_types/slider.php');
   require_once(INCLUDES.'/post_types/services.php');
   require_once(INCLUDES.'/post_types/clients.php');
+  require_once(INCLUDES.'/post_types/products.php');
+  require_once(INCLUDES.'/post_types/suppliers.php');
 
   remove_action('wp_head', 'rsd_link');
   remove_action('wp_head', 'wp_generator');

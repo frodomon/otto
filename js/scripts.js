@@ -12,6 +12,9 @@ jQuery(document).ready(function() {
 		  }
 		});
 	});
+	if ( window.location.pathname == '/productos/pokemon/' || window.location.pathname == '/productos/magic/' || window.location.pathname == '/productos/accesorios/' || window.location.pathname == '/productos/juegos-de-mesa/' ){
+		jQuery('#wrap').css('height','auto');
+	}
 	jQuery(window).scroll(function () {
 		if ( jQuery(window).width() < 1024 ){
 			jQuery('header').addClass('fixed-header')

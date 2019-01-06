@@ -722,12 +722,112 @@ footer a:hover{
 }
 /*--------------------FrontProducts-----------------------*/
 #products{
-	width:80%;
-	margin:0 10%;
+	width:100%;
+	background-color: #FFFFFF;
+	display:block;
+}
+/* ------------------------------PRODUCT PAGE---------------------- */
+.gameline-products{
+	width:100%;
 	display:flex;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 2rem;
+}
+.gameline-category{
+	width: 20%;
+	margin: 0.75rem 1.5rem;	
+	float: left;
+}
+.gameline-category img{
+	width:100%;
+	display:block;
+}
+.product-resume{
+	width:30%;
+	padding: 1.5rem 0.75rem;
+	border: 1px solid #DADADA;
+	margin: 0.25rem;
+}
+.product-thumbnail{
+	width:100%;
+	float:left;
+	display:flex;
+  flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.p-thumb{
+	width:200px;
+}
+.p-thumb img{
+	width:100%
+}
+.product-resume-description{
+	width:100%;
+	float:left;
+}
+.product-title{
+	font-family: 'Maven Pro', 'sans-serif';
+	font-size: 1.5rem;
+	text-align: left;
+	margin:0;
+	padding:0.5rem 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.product-description{
+	margin:0;
+	font-size:1rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+.product-button{
+	background-color: #1E3440;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+.product-button,
+.product-button:focus,
+.product-button:visited,
+.btn-back,
+.btn-back:focus,
+.btn-back:visited{
+	color:white;
+}
+.btn-back:hover{
+	color:#1E3440;
+}
+.product-button:hover{
+	color:#00b0bc;
+}
+.tachadobybestprice{
+	text-decoration: line-through;
+	color:red;
+}
+.negrita{
+	font-weight: bold;
+}
+.btn-back{
+	background-color: #00b0bc;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+.back-button{
+	margin:0 0 2rem 0;
+	font-size:1rem;
+	text-align: center;
 }
 /*--------------------FrontBLOG-----------------------*/
 #news{
