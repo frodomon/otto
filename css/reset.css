@@ -407,3 +407,71 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/*----------THe Event Calendar---------------------*/
+
+.tribe-events-single-event-title{
+  margin:0 !important;
+}
+.tribe-events-schedule h2{
+  padding-bottom: 0 !important;
+}
+.tribe-events-event-image img{
+  width:100% !important;
+}
+a.tribe-events-gcal,
+a.tribe-events-ical{
+  float:none !important;
+  margin-top: 0 !important;
+}
+.tribe-events-single-section{
+  width: 100%;
+}
+.tribe-events-single-section.tribe-events-event-meta.primary{
+  margin-bottom: 0.5rem;
+}
+.tribe-events-single-section.tribe-events-event-meta.primary .tribe-events-meta-group-details,
+.tribe-events-single-section.tribe-events-event-meta.primary .tribe-events-meta-group-organizer{
+  width: 50%;
+  margin-bottom: 0;
+}
+.tribe-events-single-section-title{
+  text-align: left !important;
+  padding-bottom: 0 !important;
+  font-size: 1.4rem !important;
+}
+.tribe-events-meta-group dt{
+  margin-left: 0 !important;
+}
+.tribe-events-meta-group dd{
+  margin: 0 0 0.5rem 0 !important;
+}
+.tribe-events-event-cost{
+  margin: 0 !important;
+}
+
+.tribe-events-single-section.tribe-events-event-meta.secondary{
+  margin-bottom: 0.5rem;
+}
+.tribe-events-single-section.tribe-events-event-meta.secondary .tribe-events-meta-group-venue{
+  width:30%;
+}
+.tribe-events-single-section.tribe-events-event-meta.secondary .tribe-events-venue-map{
+  width:60%;
+  float:left;
+}
+
+/*------Responsive--------------*/
+@media only screen and (max-width: 767px){
+  .tribe-events-single-section.tribe-events-event-meta.primary{
+    margin-top: 0.5rem;
+  }
+  .tribe-events-single-section.tribe-events-event-meta.secondary .tribe-events-meta-group-venue{
+    width:100%;
+  }
+  .tribe-events-single-section.tribe-events-event-meta.secondary .tribe-events-venue-map{
+    width:100%;
+    float:none;
+  }
+}
