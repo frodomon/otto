@@ -4,88 +4,56 @@ get_header();  ?>
 	<section id="intertiendas">
 		<h1 class="page-title" style="display:none;"><?php the_title(); ?></h1>
 		<div class="group-images">
-			<img class="img-group" src="<?php print IMAGES.'/PKM Team Up.png' ?>" alt="Pokémon Sun & Moon - Team Up" />
+			<img class="img-group" src="<?php print IMAGES.'/PKM Unbroken Bonds.png' ?>" alt="Pokémon Sun & Moon - Unbroken Bonds" />
 		</div>
 		<div class="liga-content">
-			<p class="text">El Tablero de Otto se complace en invitarlos a nuestro pre-release de la nueva expansión de Pokémon TCG: Team Up. Es la oportunidad perfecta para conseguir cartas de la nueva expansión, conocer mas jugadores y divertirse jugando el torneo de pre-lanzamiento. !Te esperamos!</p>
+			<p class="text">El Tablero de Otto se complace en invitarlos a nuestro pre-release de la nueva expansión de Pokémon TCG: Unbroken Bonds. Es la oportunidad perfecta para conseguir cartas de la nueva expansión, conocer mas jugadores y divertirse jugando el torneo de pre-lanzamiento. !Te esperamos!</p>
 		</div>		
 		<div class="central-block">
 			<div class="info-torneo">
 				<div class="liga-content" style="text-align:justify;">
 					<p class="text"><strong>Lugar:</strong> El Tablero de Otto (Av. Mariano Cornejo 2286)</p>
-					<p class="text"><strong>Fecha:</strong>Domingo 20 de Enero</p>
+					<p class="text"><strong>Fecha:</strong> Domingo 28 de Abril</p>
 					<p class="text"><strong>Hora:</strong></p>
 					<ul>
 						<li><p class="text">Inscripciones: 3:30 pm</p></li>
-						<li><p class="text">Inicio de rondas: 4:30 pm</p></li>
+						<li><p class="text">Inicio de rondas: 5:00 pm</p></li>
 					</ul>
-					<p class="text"><strong>Costo:</strong> S/ 100 (S/ 90 si te preinscribes antes del viernes 18 de enero</p>			
+					<p class="text"><strong>Costo:</strong> S/ 100 (S/ 90 si te preinscribes antes del viernes 26 de Abril)</p>			
 					<p class="text"><strong>Incluye:</strong></p>
 					<ul>
 						<li><p class="text">1 Kit de Pre-Release que contiene:</p></li>
 						<ul>
 							<li><p class="text">1 deck preconstruido de 23 cartas(al azar entre las 4 combinaciones)</p></li>
 							<li><p class="text">1 carta promocional al azar(de acuerdo al tipo de deck preconstruido)</p></li>
-							<li><p class="text">4 sobres de Team Up</p></li>
+							<li><p class="text">4 sobres de Unbroken Bonds</p></li>
 						</ul>
-						<li><p class="text">3 sobres de Team Up(se entregan al finalizar el evento)</p></li>
+						<li><p class="text">3 sobres de Unbroken Bonds(se entregan al finalizar el evento)</p></li>
 					</ul>
 					<p class="text"><strong>Premios:</strong>Sobres extras para las mejores posiciones</p>
 					<p class="text">Cupos Limitados (Máx. 20 personas)</p>
-					<p class="text">Puedes revisar las cartas de la expansión <a href="https://bulbapedia.bulbagarden.net/wiki/Team_Up_(TCG)" target="_blank">aquí.</a></p>
+					<p class="text">Puedes revisar las cartas de la expansión <a href="https://www.pokebeach.com/2019/04/unbroken-bonds-speculative-set-list" target="_blank">aquí.</a></p>
 					<p class="text">Todo el material está en Español.</p>
 				</div>
 			</div>
 		</div>
-		<div class="liga-images">
-			<img src="<?php print IMAGES.'/PKM - Prerelease Team Up.jpg' ?>" alt="Prerelease Team Up" />
-		</div>
 		<div class="liga-content">
-			<p class="text">Puedes separar tu cupo en el torneo preinscribiéndote con VISA (vía web) o depositando (o transfiriendo) el 50% del costo de inscripción a nuestra cuenta 1932329120064 en el BCP y enviarnos el voucher escaneado a otto@eltablerodeotto.com</p>
+			<p class="text">Puedes separar tu cupo en el torneo preinscribiéndote con VISA (vía web) o depositando (o transfiriendo) el 50% del costo de inscripción a nuestra cuenta 1932329120064 en el BCP y enviarnos el voucher escaneado a <a href="mailto:otto@eltablerodeotto.com">otto@eltablerodeotto.com</a></p>
 		</div>
 		<div class="central-block">
 			<div class="product-resume group">
 	    	<div class="product-thumbnail">
 	    		<div class="p-thumb">
-						<img src="<?php print IMAGES.'/Pre-Release Team Up.jpg' ?>" alt=" Pre-Release Pokémon Sun & Moon - Team Up" />
+						<img src="<?php print IMAGES.'/PKM - Prerelease Unbroken Bonds.jpg' ?>" alt=" Pre-Release Pokémon Sun & Moon - Unbroken Bonds" />
 					</div> 
 				</div>      		
 	  		<div class="product-resume-description">
-	  			<h3 class='product-title' style='color:black;'>Pre-Release Team Up</h3>
+	  			<h3 class='product-title' style='color:black;'>Pre-Release Unbroken Bonds</h3>
 	      	<p class='product-description negrita'>Precio: S/. 90</p>	
-	        <p class='product-description'><a class='product-button' href="" target="_blank">Pre-Inscribirme</a></p>
+	        <p class='product-description'><a class='product-button' href="https://www.visanetlink.pe/pagoseguro/ELTABLERODEOTTO/59841" target="_blank">Pre-Inscribirme</a></p>
 	  		</div>
 	    </div>
 	  </div>
-    <div class="liga-content">
-    	<p class="text">Tambien puedes separar tus productos favoritos aquí</p>
-    	<div class="central-block">
-	    	<div class="product-resume group">
-		    	<div class="product-thumbnail">
-		    		<div class="p-thumb">
-							<img src="<?php print IMAGES.'/sm09 - elite trainer box team up.jpg' ?>" alt="Pokémon Sun & Moon - Team Up - Elite Trainer Box" />
-						</div> 
-					</div>      		
-		  		<div class="product-resume-description">
-		  			<h3 class='product-title' style='color:black;'>Pokémon Elite Trainer Box Team UP</h3>
-		      	<p class='product-description negrita'>Precio: S/. 140</p>	
-		        <p class='product-description'><a class='product-button' href="" target="_blank">Pre-Ordenar</a></p>
-		  		</div>
-		    </div>
-		    <div class="product-resume group">
-		    	<div class="product-thumbnail">
-		    		<div class="p-thumb">
-							<img src="<?php print IMAGES.'/Boosters Box Team Up.jpg' ?>" alt="Pokémon Sun & Moon - Team Up - Booster Box" />
-						</div> 
-					</div>      		
-		  		<div class="product-resume-description">
-		  			<h3 class='product-title' style='color:black;'>Booster Box Pokémon Team Up</h3>
-		      	<p class='product-description negrita'>Precio: S/. 400</p>	
-		        <p class='product-description'><a class='product-button' href="" target="_blank">Pre-Ordenar</a></p>
-		  		</div>
-		    </div>
-		  </div>
-    </div>
 	  <div class="liga-content" style="text-align:justify;">
 			<p class="text"style="font-size:2rem;"><strong>Preguntas Frecuentes:</strong></p>
 			<p class="text"><strong>✔️ ¿QUÉ ES UN PRE-RELEASE?</strong></p>

@@ -1,4 +1,4 @@
-<?php //Template Name: PKM League Dic
+<?php //Template Name: PKM League Mar19
 get_header();  ?>
 <div id="main" class="group">
 	<section id="intertiendas">
@@ -12,20 +12,15 @@ get_header();  ?>
 		<div class="liga-images">
 			<div class="liga-content">
 				<h2>Fechas</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Diciembre - Calendario.png' ?>" alt="Calendario" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Marzo 19 - Calendario.png' ?>" alt="Calendario" />
 			</div>
 			<div class="liga-content">
 				<h2>Resultados</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Diciembre - Resultados.png' ?>" alt="Resultados de la Liga" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Marzo 19 - Resultados.png' ?>" alt="Resultados de la Liga" />
 			</div>
 			<div class="liga-content">
 				<h2>Brackets Top 8</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Diciembre - Brackets Top 8.png' ?>" alt="Brackets Top8" />
-			</div>
-			<div class="liga-content">
-				<h2>Ganador</h2>
-				<p class="text">Nuestro Campeón de Diciembre: Ángel Aranibar</p>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Diciembre - Campeón.jpg' ?>" alt="Campeón" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Marzo 19 - Brackets Top 8.png' ?>" alt="Brackets Top8" />
 			</div>
 		</div>
 	</section>

@@ -1,4 +1,4 @@
-<?php //Template Name: PKM League Ene19
+<?php //Template Name: PKM League Feb19
 get_header();  ?>
 <div id="main" class="group">
 	<section id="intertiendas">
@@ -12,25 +12,20 @@ get_header();  ?>
 		<div class="liga-images">
 			<div class="liga-content">
 				<h2>Fechas</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Enero 19 - Calendario.png' ?>" alt="Calendario" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Febrero 19 - Calendario.png' ?>" alt="Calendario" />
 			</div>
 			<div class="liga-content">
 				<h2>Resultados</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Enero 19 - Resultados.png' ?>" alt="Resultados de la Liga" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Febrero 19 - Resultados.png' ?>" alt="Resultados de la Liga" />
 			</div>
 			<div class="liga-content">
 				<h2>Brackets Top 8</h2>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Enero 19 - Brackets Top 8.png' ?>" alt="Brackets Top8" />
+				<img src="<?php print IMAGES.'/Otto Pokémon League Febrero 19 - Brackets Top 8.png' ?>" alt="Brackets Top8" />
 			</div>
 			<div class="liga-content">
 				<h2>Ganadores</h2>
-				<p class="text">Nuestro Campeón de Noviembre: Fabrizio Inga</p>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Enero 19 - Campeón.jpg' ?>" alt="Campeón" />
-			</div>
-			<div class="liga-content">
-				<h2>Sub Campeón</h2>
-				<p class="text">Nuestro Sub Campeón de Octubre: Renzo Zambrano</p>
-				<img src="<?php print IMAGES.'/Otto Pokémon League Enero 19 - SubCampeón.jpg' ?>" alt="Sub Campeón" />
+				<p class="text">Nuestro Campeón de Noviembre: Alvaro Castañeda</p>
+				<img src="<?php print IMAGES.'/Otto Pokémon League Febrero 19 - Campeón.jpg' ?>" alt="Campeón" />
 			</div>
 		</div>
 	</section>
