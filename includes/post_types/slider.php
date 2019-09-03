@@ -47,11 +47,11 @@
   ?>  
     <div class="metabox">
       <?php 
-        $website= ($website == "") ? "http://" : $website;
+        if ($website == "") { unset($website); }
       ?>
       <div class="field group">
         <div class="fieldname">
-          <label>Website:</label>
+          <label>Website (Incluir "http://" ):</label>
         </div>
         <div class="fieldvalue">
           <input name="website" value="<?php echo $website; ?>" />
