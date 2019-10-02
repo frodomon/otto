@@ -363,6 +363,7 @@ header h1{
 	font-size: 1.5rem;
   color: #00C0BC;
   background-color: #1E3440;
+  text-align: left;
 }
 .sf-menu .sub-menu .menu-item a:hover{
 	color: #CFCFCF;
@@ -1748,7 +1749,38 @@ aside {
   justify-content: center;
   align-items: center;
 }
+.central-block-sb{
+	width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .info-torneo{
 	width: 50%;
   text-align: justify;
+}
+/*--------------------Tablas-----------------------*/
+.tabla_top{
+	border: 2px solid #1E3440;
+	width:60%;
+	margin:0 20% 1rem 20%;
+}
+.th_cabeza{
+	border: 2px solid #1E3440;
+	background-color: #1E3440;
+	color: white;
+	text-align: center;
+}
+.tr_fila{
+	border: 2px solid #1E3440;
+}
+.td_celda{
+	border: 2px solid #1E3440;
+}
+.tabla_tienda{
+	border: 2px solid #1E3440;
+	width:45%;
+	float:left;
+	margin: 0.5rem;
 }

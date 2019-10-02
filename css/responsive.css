@@ -380,5 +380,12 @@
 	.info-torneo{
 		width:100%;
 	}
+	/*--------------------Tablas-----------------------*/
+.tabla_top{
+	width:100%;
+	margin:0 0 1rem 0;
+}
+.tabla_tienda{
+	width:100%;
 }
 
